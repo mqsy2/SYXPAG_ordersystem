@@ -1,94 +1,77 @@
-/* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-}
-
-/* Navigation Bar */
-.navbar {
-    background-color: #343a40 !important;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f4f4f4, #e0e0e0);
+    padding: 20px;
 }
 
 .navbar-nav .nav-link {
-    color: white !important;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #17a2b8 !important;
+.content-tab {
+    display: none;
 }
 
-/* Main Sections */
-.container {
-    max-width: 900px;
+.content-tab.active {
+    display: block;
 }
 
-/* Page Headers */
-h1, h2 {
-    color: #343a40;
+.table th, .table td {
+    text-align: center;
 }
 
-/* Section Styling */
-section {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+.nav-tabs .nav-item .nav-link {
+    font-weight: bold;
 }
 
-/* Table Styling */
-.table {
-    margin-top: 10px;
+button {
+    transition: 0.3s;
 }
 
-.table th {
-    background-color: #343a40;
+button:hover {
+    transform: scale(1.05);
+}
+
+.d-none {
+    display: none;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #007bff;
     color: white;
+    border-color: #007bff;
 }
 
-/* Buttons */
-.btn-success {
-    background-color: #28a745;
-    border: none;
-    transition: background 0.3s;
+.nav-tabs .nav-link {
+    color: #495057;
+    border: 1px solid #dee2e6;
+    border-bottom: none;
 }
 
-.btn-success:hover {
-    background-color: #218838;
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
 }
 
-.btn-danger {
-    background-color: #dc3545;
-    border: none;
-    transition: background 0.3s;
+.nav-tabs .nav-item:first-child .nav-link {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0;
 }
 
-.btn-danger:hover {
-    background-color: #c82333;
+.nav-tabs .nav-item:last-child .nav-link {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0.25rem;
 }
 
-/* Input Fields */
-input[type="text"],
-input[type="number"] {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ced4da;
+.tab-content {
+    border: 1px solid #dee2e6;
+    border-top: none;
+    padding: 1rem;
+}
+
+#order-confirmation {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
     border-radius: 5px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        max-width: 100%;
-        padding: 10px;
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-        text-align: center;
-    }
 }
